@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Files>
+    <Guide name="Sun Debug" location="SunDebug.xml" author="Sunan" optional="" />
+    <Guide name="Sun Three" location="SunThree.xml" author="Sunan" optional="" />
+    <Guide name="Sunan New Dawn" location="SunDawn.xml" author="Sunan" optional="100,Solo;101,Player 1;102,Player 2;103,Player 3" />
+    <Guide name="Sunan New Dawn Extras" location="SunDawnExtras.xml" author="Sunan" optional="" />
+    <Guide name="Kaidan" location="Kaidan.xml" author="Thundyr" optional="3610,Fuun;3669,Tenebrous Sky;123,Kill Quests;999,Directions" />
+    <Guide name="Neelie Shadowy Forest" location="NeelieSF1.0.xml" author="Neelie" optional=""/>
+    <Guide name="Scorched Desert" location="SD.xml" author="Dots" optional="3061;Friends and Neighbours" />
+
+	<!--<Guide name="Testing" location="Base.xml" author="Starfox" optional="123,Kill Quests" />-->
+	<!--
+		optional = QuestID/Number,String
+				Creates a checkbox in the guidewindow,where user can choose optional quests.
+				Having checkbox unchecked will complete all matching guide steps.
+				
+				Using questID as an identifier will remove all pick/complete/tier entries for that quest, but leaves the other entries intact.
+				Using random Number as an identifier will complete all steps with matching "optional" attribute in the guide.
+				if you keep the random number at less or more than 4digits it shouldn't conflict with any questID's.
+				Kaidan guide utilizes both types.
+		
+				Optional selection is stored as combination of ID and String, and shared across all guides.
+				For example if you reuse "123,Kill Quests" in a new guide then the checkbox will use pre-existing user preference, 
+					this can be handy if multiple guides implement same type of optional steps, for example kill quests or directions.
+				1234,Kill Quests - has different ID than the kaidan ID,so it would generate new user preference.
+				
+				
+	-->
+</Files>

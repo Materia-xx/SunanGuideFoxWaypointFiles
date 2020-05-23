@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Content>
+    <WP message="New Dawn extras by [color=#FF00FF][i][b]Sunan[/b][/i][/color]\nClick next to start" skip="1" />
+
+    <WP pos="413,461" message="Start quest [color=#578c82][b][u]Foulfellow and Gideon[/u][/b][/color]." pick="4072" />
+    <WP pos="442,444" message="Get the stuff from the table" tier="4072,20702,1,1,1;4072,20868,1,2,1;4072,20869,1,2,1" />
+    <WP pos="590,494" message="Use PC and type &quot;Foulfellow and Gideon&quot;" tier="4072,20774,1,5,1" />
+    <WP pos="604,504" message="Run over to the server room" tier="4072,20704,1,6,1" />
+    <WP pos="605,510" message="Use PC in server room\nType &quot;Foulfellow and Gideon&quot;" tier="4072,20729,1,7,1" />
+    <WP pos="595,510" message="Try to open door" tier="4072,20775,1,8,1" />
+    <WP pos="596,466" message="Grab keycard from manager&quot;s desk.\nYou&quot;ll need to wait until she is out of the office to grab it." tier="4072,20705,1,9,1" />
+    <WP pos="595,510" message="Back to the locked door (terminal D) and into instance" tier="4072,20706,1,10,1" />
+    <WP pos="223,266" message="Get to terminal D3 and disable the cameras.\nTips:\nStand still and the sentry drones will pass by you (they detect movement).\nThe buttons next to the doors make the mobs dissapear." tier="4072,20710,2,2,1" />
+    <WP pos="256,269" message="At terminal D4\nType &quot;Foulfellow and Gideon&quot;" tier="4072,20709,2,3,1" />
+    <WP pos="256,269" message="At terminal D4\nType &quot;Che Hansson&quot;" tier="4072,20857,2,4,1" />
+    <WP pos="414,459" message="Teleport out to New Dawn and talk to Che to complete quest [color=#578c82][b][u]Foulfellow and Gideon[/u][/b][/color]." complete="4072" />
+
+    <WP pos="413,461" message="Start quest [color=#578c82][b][u]One Flew Over[/u][/b][/color]." pick="4077" />
+    <WP message="Finish quest [color=#578c82][b][u]One Flew Over[/u][/b][/color].\nComputer pass: sacrilege" complete="4077" />
+    <WP pos="411,739" message="Start quest [color=#578c82][b][u]Wrath of the Dawn[/u][/b][/color]." pick="4071" />
+    <WP pos="398,317" message="Complete quest [color=#578c82][b][u]Wrath of the Dawn[/u][/b][/color]." complete="4071" />
+    <WP pos="398,317" message="Start quest [color=#578c82][b][u]Into the Fold[/u][/b][/color]." pick="4068" />
+    <WP pos="398,317" message="Complete quest [color=#578c82][b][u]Into the Fold[/u][/b][/color]." complete="4068" />
+</Content>

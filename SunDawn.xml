@@ -1,0 +1,453 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Content>
+    <!--
+        Note: I would have liked to make this so soloing was a matter of selecting all players, but
+        there are bugs in the processor at points like delivering the foundling gear that make it stick
+        on those steps without auto-detecting tier completion. Therefore solo optional is split out.
+        Also the parser doesn't seem to support something like optional="101,102" so these are split out too.
+    -->
+    
+    <WP message="New Dawn quest run by [color=#FF00FF][i][b]Sunan[/b][/i][/color]\nChoose solo if doing it by yourself\nOtherwise agree with the group which player you will be\nPlayer 1 is the leader\nClick next to start" skip="1" />
+    
+    <!-- Each player has to do -->
+    <WP pos="533,748" message="Start quest [color=#578c82][b][u]The Cult of Personality[/u][/b][/color]" pick="4066" />
+    
+    <!-- Each player has to do this -->
+    <WP message="Grab items from the bed" tier="4066,20766,1,3,1" />
+    
+    <!-- Each player has to do it -->
+    <WP pos="531,547" message="Run over to the trucks and start quest [color=#578c82][b][u]Dawn&apos;s Harvest[/u][/b][/color]" pick="4070" />
+    
+    <!-- Each player has to do it -->
+    <WP message="Grab the shovel" tier="4070,20659,1,1,1" />
+
+    <!-- Player 1 solos this part for the group -->
+    <WP optional="101" pos="539,615" message="Run to this row of corn" />
+    <WP optional="101" pos="539,615" message="Plant 5 maize in this row" tier="4066,20578,1,3,5" />
+
+    <!-- Player 2 solos this part for the group -->
+    <WP optional="102" pos="541,602" message="Tend to 5 growing maize" tier="4066,20671,1,3,5" />
+
+    <!-- Player 3 starts immediately on corn picking -->
+    <WP optional="103" message="Pick lots of corn!" tier="4066,20672,1,3,10;4070,20795,1,1,30" />
+
+    <!-- For solo play, but also assures each multi-player person got credit for the above -->
+    <WP message="Pick lots of corn!" tier="4066,20672,1,3,10;4070,20795,1,1,30" />
+    <WP pos="541,602" message="Tend to 5 growing maize" tier="4066,20671,1,3,5" />
+    <WP pos="541,618" message="Plant 5 maize" tier="4066,20578,1,3,5" />
+
+    <!-- Each player has to do -->
+    <WP message="Use an empty basket" tier="4066,20579,1,4,1" />
+
+    <!-- Player 1 does this for the group -->
+    <WP optional="100" message="Pick up a full basket of corn" tier="4066,20580,1,5,1" />
+    <WP optional="101" message="Wait until other players are waiting at the fight location\nThen pick up a full basket of corn" tier="4066,20580,1,5,1" />
+
+    <!-- Each player has to do -->
+    <WP pos="513,559" message="Use right hand basket in truck" tier="4070,20797,1,1,1" />
+
+    <!-- Player 1 starts the fight for the group -->
+    <WP optional="100" pos="515,558" message="Use the left hand box in the back of the truck to start the fight" tier="4066,20582,1,6,1" />
+    <WP optional="101" pos="515,558" message="Use the left hand box in the back of the truck to start the fight" tier="4066,20582,1,6,1" />
+    <WP optional="102" pos="527,559" message="Run to this spot and wait for player 1 to start the fight" tier="4066,20582,1,6,1" />
+    <WP optional="103" pos="527,559" message="Run to this spot and wait for player 1 to start the fight" tier="4066,20582,1,6,1" />
+
+    <!-- Group works together to do this -->
+    <WP pos="527,559" message="Win the fight!" tier="4066,20584,1,1,1" />
+    
+    <!-- Each player has to do-->
+    <WP pos="543,548" message="Talk to the Anointed Overseer" complete="4070" tier="4066,20585,1,1,1" />
+    
+    <!-- Each player has to do -->
+    <WP pos="538,546" message="Start quest [color=#578c82][b][u]Grease Monkey[/u][/b][/color]" pick="4081" />
+
+    <!-- Each player does a different part to contribute -->
+    <WP optional="101" pos="538,542" message="Take out broken sparkplugs" tier="4081,20787,1,1,1" />
+    <WP optional="102" pos="549,549" message="Examine missing battery in truck" tier="4081,20786,1,1,1" />
+    <WP optional="103" pos="553,548" message="Take corncob out of tailpipe in truck" tier="4081,20785,1,1,1" />
+
+    <!-- For solo play, but also assures each multi-player person got credit for the above -->
+    <WP pos="538,542" message="Take out broken sparkplugs" tier="4081,20787,1,1,1" />
+    <WP pos="549,549" message="Examine missing battery in truck" tier="4081,20786,1,1,1" />
+    <WP pos="553,548" message="Take corncob out of tailpipe in truck" tier="4081,20785,1,1,1" />
+
+    <!-- Each player has to do -->
+    <WP pos="462,600" message="Start quest [color=#578c82][b][u]Out of Sight, Out of Mind[/u][/b][/color]" pick="4090" />
+    
+    <!-- Player 1 takes care of doing this for the group -->
+    <WP optional="100" pos="612,636" message="Pick up sheet metal on the ground." tier="4090,20849,1,2,1" />    
+    <WP optional="101" pos="612,636" message="Run to here and wait for all other players to stand next to you\nThen pick up sheet metal on the ground." tier="4090,20849,1,2,1" />
+    <WP optional="102" pos="612,636" message="Run to here and wait for player 1 to pick up the sheet metal." tier="4090,20849,1,2,1" />
+    <WP optional="103" pos="612,636" message="Run to here and wait for player 1 to pick up the sheet metal." tier="4090,20849,1,2,1" />
+
+    <!-- Each player works together to accomplish the goal -->
+    <WP optional="100" pos="592,626" message="Patch up holes in the fence" tier="4090,20850,1,3,3" />
+    <WP optional="101" pos="592,626" message="Patch up holes in the fence" tier="4090,20850,1,3,3" />
+    <WP optional="102" pos="592,626" message="Patch up holes in the fence" tier="4090,20850,1,3,3" />
+    <WP optional="103" pos="592,626" message="Scare bugs away" tier="4090,20850,1,3,3" />
+
+    <!-- Each player has to do -->
+    <WP pos="463,600" message="Talk to the Anointed Overseer to finish quest [color=#578c82][b][u]Out of Sight, Out of Mind[/u][/b][/color]" complete="4090" />
+
+    <!-- Each player has to do -->
+    <WP pos="463,602" message="Talk to Anointed Overseer (again)" tier="4066,20865,2,1,1" />
+
+    <!-- Each player has to do -->
+    <WP pos="453,606" message="Listen to the sermon" tier="4066,20872,2,2,1" />
+
+    <!-- Each player has to do -->
+    <WP pos="461,595" message="Inspect the a fresco" tier="4066,20589,2,3,1" />
+
+    <!-- Each player has to do -->
+    <WP pos="456,598" message="/covereyes, /clap and /pray in front of the frescos" tier="4066,20590,2,4,3" />
+
+    <!-- Each player has to do -->
+    <WP pos="463,602" message="Talk to Anointed Overseer" tier="4066,20591,2,5,1" />
+
+    <!-- Each player has to do -->
+    <WP pos="463,600" message="Inspect the job board" tier="4066,20592,3,1,1" />
+
+    <!-- Player 1 takes care of doing this for the group -->
+    <WP optional="100" pos="463,600" message="Gerab items from table." tier="4066,20598,3,1,1;4066,20669,3,1,1;2066,20670,3,1,1" />
+    <WP optional="101" pos="463,600" message="Wait until other players are standing on the stairs\nThen grab items from table." tier="4066,20598,3,1,1;4066,20669,3,1,1;2066,20670,3,1,1" />
+    <WP optional="102" pos="479,597" message="Run over to the stairs and wait for player 1 to grab the table items." tier="4066,20598,3,1,1;4066,20669,3,1,1;2066,20670,3,1,1" />
+    <WP optional="103" pos="479,597" message="Run over to the stairs and wait for player 1 to grab the table items." tier="4066,20598,3,1,1;4066,20669,3,1,1;2066,20670,3,1,1" />
+
+    <!-- Each player has to do -->
+    <WP pos="463,600" message="Start quest [color=#578c82][b][u]Vermin Cleanup Detail[/u][/b][/color]." pick="4089" />
+    
+    <!-- Each player has to do -->
+    <WP pos="463,600" message="Start quest [color=#578c82][b][u]Whitewashing[/u][/b][/color]." pick="4082" />
+    
+    <!-- Each player has to do -->
+    <WP pos="463,601" message="Collect cleaning supplies.\nWhile cleaning up houses in the next phase, take detours to clean up walls and grab dirty buckets." tier="4082,20799,1,1,1" />
+    
+    <!-- Each player has to do this -->
+    <WP pos="467,601" message="Get the broom" tier="4089,20840,1,1,1" />
+
+    <!-- Player 1 takes care of doing this for the group -->
+    <WP optional="100" pos="468,558" message="Clean up house (D11)" tier="4089,20844,1,1,1" />
+    <WP optional="101" pos="468,558" message="Wait for all other players to be in the house (D11)\nThen clean it up" tier="4089,20844,1,1,1" />
+    <WP optional="102" pos="468,558" message="Wait in this house (D11) for player 1 to clean it up" tier="4089,20844,1,1,1" />
+    <WP optional="103" pos="468,558" message="Wait in this house (D11) for player 1 to clean it up" tier="4089,20844,1,1,1" />
+
+    <!-- TODO: is it possible to just have p2,3 run in and out and then have p1 finish the job? -->
+    <!-- Player 1 takes care of doing this for the group 
+        In the house tier: 4066,20599,3,2,1
+    -->
+    <WP optional="100" pos="413,689" message="Deliver the foundling gear (A20)" tier="4066,20600,3,3,1" />
+    <WP optional="101" pos="413,689" message="Wait for all other players to be in the house (A20)\nThen deliver the foundling gear" tier="4066,20600,3,3,1" />
+    <WP optional="102" pos="413,689" message="Wait in this house (A20) for player 1 to deliver the foundling gear" tier="4066,20600,3,3,1" />
+    <WP optional="103" pos="413,689" message="Wait in this house (A20) for player 1 to deliver the foundling gear" tier="4066,20600,3,3,1" />
+
+    <!-- Player 1 takes care of doing this for the group -->
+    <WP optional="100" pos="464,663" message="Clean up house (A17)" tier="4089,20841,1,1,1" />
+    <WP optional="101" pos="464,663" message="Wait for all other players to be in the house (A17)\nThen clean up house" tier="4089,20841,1,1,1" />
+    <WP optional="102" pos="464,663" message="Wait in this house (A17) for player 1 to clean it up" tier="4089,20841,1,1,1" />
+    <WP optional="103" pos="464,663" message="Wait in this house (A17) for player 1 to clean it up" tier="4089,20841,1,1,1" />
+
+    <!-- Player 1 takes care of doing this for the group
+        In the house tier: 4066,20601,3,1,1
+    -->
+    <WP optional="100" pos="477,710" message="Deliver foundling gear (B8)" tier="4066,20602,3,2,1" />
+    <WP optional="101" pos="477,710" message="Wait for all other players to be in the house (B8)\nThen deliver foundling gear" tier="4066,20602,3,2,1" />
+    <WP optional="102" pos="477,710" message="Wait in this house (B8) for player 1 to deliver the foundling gear" tier="4066,20602,3,2,1" />
+    <WP optional="103" pos="477,710" message="Wait in this house (B8) for player 1 to deliver the foundling gear" tier="4066,20602,3,2,1" />
+
+    <!-- Player 1 takes care of doing this for the group 
+        In the house tier: 4066,20603,3,1,1
+    -->
+    <WP optional="100" pos="549,714" message="Deliver foundling gear (D10)" tier="4066,20604,3,2,1" />
+    <WP optional="101" pos="549,714" message="Wait for all other players to be in the house (D10)\nThen deliver foundling gear" tier="4066,20604,3,2,1" />
+    <WP optional="102" pos="549,714" message="Wait in this house (D10) for player 1 to deliver the foundling gear" tier="4066,20604,3,2,1" />
+    <WP optional="103" pos="549,714" message="Wait in this house (D10) for player 1 to deliver the foundling gear" tier="4066,20604,3,2,1" />
+
+    <!-- Player 1 takes care of doing this for the group -->
+    <WP optional="100" pos="593,688" message="Clean up house (B3)" tier="4089,20842,1,1,1" />
+    <WP optional="101" pos="593,688" message="Wait for all other players to be in the house (B3)\nThen clean up house" tier="4089,20842,1,1,1" />
+    <WP optional="102" pos="593,688" message="Wait in this house (B3) for player 1 to clean it up" tier="4089,20842,1,1,1" />
+    <WP optional="103" pos="593,688" message="Wait in this house (B3) for player 1 to clean it up" tier="4089,20842,1,1,1" />
+
+    <!-- Player 1 takes care of doing this for the group -->
+    <WP optional="100" pos="611,757" message="Clean up house (C14)" tier="4089,20843,1,1,1" />
+    <WP optional="101" pos="611,757" message="Wait for all other players to be in the house (C14)\nThen clean up house" tier="4089,20843,1,1,1" />
+    <WP optional="102" pos="611,757" message="Wait in this house (C14) for player 1 to clean it up" tier="4089,20843,1,1,1" />
+    <WP optional="103" pos="611,757" message="Wait in this house (C14) for player 1 to clean it up" tier="4089,20843,1,1,1" />
+
+    <!-- Player 1 takes care of doing this for the group
+        In the house tier: 4066,20605,3,1,1
+    -->
+    <WP optional="100" pos="549,767" message="Deliver foundling gear (E7)" tier="4066,20613,3,2,1" />
+    <WP optional="101" pos="549,767" message="Wait for all other players to be in the house (E7)\nThen deliver foundling gear" tier="4066,20613,3,2,1" />
+    <WP optional="102" pos="549,767" message="Wait in this house (E7) for player 1 to deliver the foundling gear" tier="4066,20613,3,2,1" />
+    <WP optional="103" pos="549,767" message="Wait in this house (E7) for player 1 to deliver the foundling gear" tier="4066,20613,3,2,1" />
+
+    <!-- All group members work together in parallel to finish -->
+    <WP message="Finish cleaning up walls and buckets" tier="4082,20801,1,1,5;4082,20800,1,1,3" />
+    
+    <!-- All group members grab what they can in parallel to complete this tier -->
+    <WP optional="100" pos="548,767" message="Grab items from the room" tier="4066,20606,3,2,3" />
+    <WP optional="101" pos="548,767" message="Wait until all players are in the room\nThen grab items from the room" tier="4066,20606,3,2,3" />
+    <WP optional="102" pos="548,767" message="Wait until all players are in the room\nThen grab items from the room" tier="4066,20606,3,2,3" />
+    <WP optional="103" pos="548,767" message="Wait until all players are in the room\nThen grab items from the room" tier="4066,20606,3,2,3" />
+
+    <!-- Player 1 does this for the group -->
+    <WP optional="100" pos="486,767" message="Put items in box" tier="4066,20673,3,3,1" />
+    <WP optional="101" pos="486,767" message="Wait for all other players to be here\nThen put items in box" tier="4066,20673,3,3,1" />
+    <WP optional="102" pos="486,767" message="Wait here for player 1 to place the items in the box" tier="4066,20673,3,3,1" />
+    <WP optional="103" pos="486,767" message="Wait here for player 1 to place the items in the box" tier="4066,20673,3,3,1" />
+
+    <!-- Each player has to do -->
+    <WP pos="486,767" message="Talk to Anointed Overseer" tier="4066,20608,3,4,1" />
+    
+    <!-- All players work together in parallel during the boxing match -->
+    <WP optional="100" pos="256,286" message="Go into the gym and win the boxing match" tier="4066,20612,4,2,1" />
+    <WP optional="101" pos="256,286" message="Go into the gym and win the boxing match together as a group" tier="4066,20612,4,2,1" />
+    <WP optional="102" pos="256,286" message="Go into the gym and win the boxing match together as a group" tier="4066,20612,4,2,1" />
+    <WP optional="103" pos="256,286" message="Go into the gym and win the boxing match together as a group" tier="4066,20612,4,2,1" />
+
+    <!-- Each player has to do -->
+    <WP pos="262,289" message="Talk to Anointed Overseer and complete [color=#578c82][b][u]The Cult of Personality[/u][/b][/color]" complete="4066" />
+
+    <!-- Each player gets a different thing, kind of -->
+    <WP optional="101" pos="464,787" message="Get spark plug" tier="4081,20789,2,1,1" />
+    <WP optional="102" pos="454,780" message="Get battery" tier="4081,20788,2,1,1" />
+    <WP optional="103" pos="454,780" message="Get battery and/or spark plug" tier="4081,20788,2,1,1;4081,20789,2,1,1" />
+
+    <!-- For solo play, but also assures each multi-player person got credit for the above -->
+    <WP pos="464,787" message="Get spark plug" tier="4081,20789,2,1,1" />
+    <WP pos="454,780" message="Get battery" tier="4081,20788,2,1,1" />
+
+    <!-- Each player has to do -->
+    <WP pos="467,605" message="Talk to the Anointed Overseer to finish quest [color=#578c82][b][u]Whitewashing[/u][/b][/color]." complete="4082" />
+    <WP pos="467,605" message="Talk to the Anointed Overseer to finish quest [color=#578c82][b][u]Vermin Cleanup Detail[/u][/b][/color]." complete="4089" />
+
+    <!-- Each player fixes a different truck -->
+    <WP optional="101" pos="549,549" message="Wait for all players to be close by\nThen put battery in truck" tier="4081,20790,2,2,1" />
+    <WP optional="102" pos="538,542" message="Wait for all players to be close by\nThen replace the spark plugs" tier="4081,20791,2,2,1" />
+    <WP optional="103" pos="543,548" message="Wait here for other players to complete the truck quest" tier="4081,20790,2,2,1;4081,20791,2,2,1" />
+
+    <!-- For solo play, but also assures each multi-player person got credit for the above -->
+    <WP pos="549,549" message="Put battery in truck" tier="4081,20790,2,2,1" />
+    <WP pos="538,542" message="Replace the spark plugs" tier="4081,20791,2,2,1" />
+
+    <!-- Each player has to do -->
+    <WP pos="544,548" message="Talk to Anointed Overseer to finish quest [color=#578c82][b][u]Grease Monkey[/u][/b][/color]." complete="4081" />
+    
+    <!-- Each player has to do -->
+    <WP pos="442,439" message="Start quest [color=#578c82][b][u]Dead Drop[/u][/b][/color]." pick="4093" />
+
+    <!-- Each player has to do -->
+    <WP pos="445,443" message="Start quest [color=#578c82][b][u]Eavesdropper[/u][/b][/color]." pick="4130" />
+    
+    <!-- Each player has to do -->
+    <WP pos="413,461" message="Start quest [color=#578c82][b][u]Public Enemy Number One[/u][/b][/color]." pick="4096" />
+
+    <!-- Each player has to do -->
+    <WP pos="444,445" message="Examine device" tier="4130,21016,1,1,1" />
+    
+    <!-- Each player has to do -->
+    <WP pos="442,449" message="Examine basket" tier="4096,20887,1,1,1" />
+    
+    <!-- Each player has to do, but you can run together -->
+    <WP pos="429,418" message="Run over here" />
+    <WP pos="614,414" message="Run along wall\nDodge sniper while running" />
+
+    <!-- Group can kill the agent together -->
+    <WP optional="100" pos="614,414" message="Beat up agent, finishing quest [color=#578c82][b][u]Eavesdropper[/u][/b][/color]" complete="4130" />
+    <WP pos="614,414" message="Wait for all players to be close by\nThen beat up agent, finishing quest [color=#578c82][b][u]Eavesdropper[/u][/b][/color]" complete="4130" />
+    
+    <!-- Each player has to do -->
+    <WP pos="536,444" message="Start quest [color=#578c82][b][u]Espionage[/u][/b][/color]." pick="4085" />
+    
+    <!-- Each player has to do -->
+    <WP pos="534,443" message="Pick up device from under bench" tier="4085,20815,1,1,1" />
+
+    <!-- Each player has to do 
+        Turn on tracker and find: 4085,20819,2,1,1
+    -->
+    <WP pos="591,465" message="Turn on tracker\nFind listening device in manager office" tier="4085,20819,2,1,1" />
+    <WP pos="591,465" message="Turn on tracker\nFind listening device in manager office" tier="4085,20820,2,2,1" />
+
+    <!-- Each player has to do
+        Turn on tracker and find: 4085,20821,2,3,1
+    -->
+    <WP pos="547,509" message="Turn on tracker\nFind listening device in printing press" tier="4085,20821,2,3,1" />
+    <WP pos="547,509" message="Turn on tracker\nFind listening device in printing press" tier="4085,20822,2,4,1" />
+
+    <!-- Each player has to do
+        Turn on tracker and find: 4085,20823,2,5,1
+    -->
+    <WP pos="478,469" message="Turn on tracker\nFind listening device between buildings" tier="4085,20823,2,5,1" />
+    <WP pos="478,469" message="Turn on tracker\nFind listening device between buildings" tier="4085,20824,3,1,1ee" />
+
+    <!-- Each player has to do -->
+    <WP pos="460,469" message="Finish quest [color=#578c82][b][u]Espionage[/u][/b][/color]." complete="4085" />
+
+    <!-- Players search in different locations then converge when one finds the dead drop -->
+    <WP optional="100" message="Search for Dead Drop" tier="4093,20855,1,1,1" />
+    <WP optional="101" message="Search for Dead Drop in the housing district\nTell other players if you find it and wait for everyone to loot it." tier="4093,20855,1,1,1" />
+    <WP optional="102" message="Search for Dead Drop by the printing press and kitchen\nTell other players if you find it and wait for everyone to loot it." tier="4093,20855,1,1,1" />
+    <WP optional="103" message="Search for Dead Drop inn the computer center\nTell other players if you find it and wait for everyone to loot it." tier="4093,20855,1,1,1" />
+    
+    <!-- Each player has to do -->
+    <WP pos="439,434" message="Visit Mark Strakes and finish quest [color=#578c82][b][u]Dead Drop[/u][/b][/color]." complete="4093" />
+    
+    <!-- Each player has to do -->
+    <WP pos="491,584" message="Jump the wall and grab the tracking device" tier="4096,20951,2,1,1" />
+    
+    <!-- Each player has to do and trackers can lead to different locations -->
+    <WP message="Chase the sniper until you get a chance to grenade him" tier="4096,20891,2,2,1" />
+
+    <!-- Each player has to do -->
+    <WP pos="405,732" message="Follow blood trail to alleyway." tier="4096,20892,2,1,1" />
+    
+    <!-- Player 1 does this for the group -->
+    <WP optional="100" pos="404,730" message="Inspect the device" tier="4096,20903,3,1,1" />
+    <WP optional="101" pos="404,730" message="Wait for all other players to be here\nThen inspect the device" tier="4096,20903,3,1,1" />
+    <WP optional="102" pos="404,730" message="Wait here for player 1 to inspect the device" tier="4096,20903,3,1,1" />
+    <WP optional="103" pos="404,730" message="Wait here for player 1 to inspect the device" tier="4096,20903,3,1,1" />
+
+    <!-- Group works together to kill the sniper -->
+    <WP pos="404,730" message="Defeat the sniper!" tier="4096,20901,3,2,1" />
+
+    <!-- Each player has to do -->
+    <WP message="Inspect the sniper&quot;s belongings and finish quest [color=#578c82][b][u]Public Enemy Number One[/u][/b][/color]." complete="4096" />
+
+    <!-- Each player has to do -->
+    <WP pos="532,747" message="Start quest [color=#578c82][b][u]Things That Go Bump in the Night[/u][/b][/color]." pick="4069" />
+
+    <!-- Each player has to do -->
+    <WP pos="425,744" message="Sleep until night\nThen kill a Kishi Demon and get quest [color=#578c82][b][u]A Monstrous Siege[/u][/b][/color]." pick="4084" />
+
+    <!-- Player 1 starts the quest, then group works together to finish it -->
+    <WP optional="100" pos="425,744" message="Try to open the door\nThen finish quest [color=#578c82][b][u]A Monstrous Siege[/u][/b][/color]." complete="4084" />
+    <WP optional="101" pos="425,744" message="When all players are here, try to open the door\nThen finish quest [color=#578c82][b][u]A Monstrous Siege[/u][/b][/color]." complete="4084" />
+    <WP optional="102" pos="425,744" message="Wait for player 1 to open the door\nThen finish quest [color=#578c82][b][u]A Monstrous Siege[/u][/b][/color]." complete="4084" />
+    <WP optional="103" pos="425,744" message="Wait for player 1 to open the door\nThen finish quest [color=#578c82][b][u]A Monstrous Siege[/u][/b][/color]." complete="4084" />
+
+    <!-- Each player has to be in the right area to auto get the quest -->
+    <WP pos="425,696" message="Get quest [color=#578c82][b][u]Kongamato Calamity[/u][/b][/color]." pick="4080" />
+
+    <!-- Group can work together to get them -->
+    <WP optional="100" message="Run around and kill Kongamato and finish quest [color=#578c82][b][u]Kongamato Calamity[/u][/b][/color]." complete="4080" />
+    <WP optional="101" message="Wait for all other players to be in the same area\nThen run around and kill Kongamato and finish quest [color=#578c82][b][u]Kongamato Calamity[/u][/b][/color]." complete="4080" />
+    <WP optional="102" message="Wait for all other players to be in the same area\nThen run around and kill Kongamato and finish quest [color=#578c82][b][u]Kongamato Calamity[/u][/b][/color]." complete="4080" />
+    <WP optional="103" message="Wait for all other players to be in the same area\nThen run around and kill Kongamato and finish quest [color=#578c82][b][u]Kongamato Calamity[/u][/b][/color]." complete="4080" />
+
+    <!-- Each player has to do -->
+    <WP pos="424,584" message="Start quest [color=#578c82][b][u]Death From Above[/u][/b][/color]." pick="4083" />
+
+    <!-- Each player has to do -->
+    <WP pos="440,606" message="Get the fireworks" tier="4083,20803,1,1,1" />
+
+    <!-- Each player has to do -->
+    <WP optional="100" pos="422,579" message="Place fireworks on the ground and activate them." tier="4083,20807,2,1,1;4083,20808,2,2,1" />
+    <WP optional="101" pos="422,579" message="All players at the same time:\nPlace fireworks on the ground and activate them." tier="4083,20807,2,1,1;4083,20808,2,2,1" />
+    <WP optional="102" pos="422,579" message="All players at the same time:\nPlace fireworks on the ground and activate them." tier="4083,20807,2,1,1;4083,20808,2,2,1" />
+    <WP optional="103" pos="422,579" message="All players at the same time:\nPlace fireworks on the ground and activate them." tier="4083,20807,2,1,1;4083,20808,2,2,1" />
+
+    <!-- Group works together to kill -->
+    <WP pos="443,577" message="Kill the Kongomato and finish quest [color=#578c82][b][u]Death From Above[/u][/b][/color]." complete="4083" />
+
+    <!-- Each player has to do -->
+    <WP pos="483,546" message="Get quest [color=#578c82][b][u]Hyena Frenzy[/u][/b][/color]." pick="4079" />
+
+    <!-- Group works together to complete -->
+    <WP optional="100" message="Kill 12 Hyenas" complete="4079" />
+    <WP optional="101" message="Wait until other players are in the same area\nThen kill 12 Hyenas" complete="4079" />
+    <WP optional="102" message="Wait until other players are in the same area\nThen kill 12 Hyenas" complete="4079" />
+    <WP optional="103" message="Wait until other players are in the same area\nThen kill 12 Hyenas" complete="4079" />
+
+    <!-- Each player has to do -->
+    <WP pos="602,777" message="Start quest [color=#578c82][b][u]Graffiti Time[/u][/b][/color]." pick="4088" />
+    
+    <!-- Each player has to do -->
+    <WP pos="602,777" message="Collect cleaning supplies." tier="4088,20845,1,1,1" />
+
+    <!-- Group splits up and works in parallel to complete this -->
+    <WP message="Finish spray painting the domiciles" tier="4088,20837,1,2,8" />
+
+    <!-- 
+        These next three are can be done by any one player in the group and everyone gets credit
+        The idea here is that while running around doing the above spray painting
+        the players will inadvertantly do these which may cause some to all of them
+        not to show up at all. They are here just in case they get missed.
+    -->
+    <WP pos="581,753" message="Pursue the Bouda Matriarch" tier="4069,20644,2,3,1" />
+    <WP pos="604,741" message="Pursue the Bouda Matriarch" tier="4069,20645,2,4,1" />
+    <WP pos="597,693" message="Pursue the Bouda Matriarch" tier="4069,20656,2,6,1" />
+
+    <!-- Run in together to get this mission -->
+    <WP optional="100" pos="618,632" message="Run in and get mission [color=#578c82][b][u]Locust Exterminator[/u][/b][/color]" pick="4087" />
+    <WP optional="101" pos="618,632" message="Wait outside next to the locusts until all players are here\nThen run in together and get mission [color=#578c82][b][u]Locust Exterminator[/u][/b][/color]" pick="4087" />
+    <WP optional="102" pos="618,632" message="Wait outside next to the locusts until all players are here\nThen run in together and get mission [color=#578c82][b][u]Locust Exterminator[/u][/b][/color]" pick="4087" />
+    <WP optional="103" pos="618,632" message="Wait outside next to the locusts until all players are here\nThen run in together and get mission [color=#578c82][b][u]Locust Exterminator[/u][/b][/color]" pick="4087" />
+
+    <!-- Group works together to do this -->
+    <WP pos="610,619" message="Exterminate the locusts!" complete="4087" />
+
+    <!-- Player 1 takes care of doing this for the group -->
+    <WP optional="100" pos="605,542" message="Examine the duct" tier="4069,20764,3,1,1" />
+    <WP optional="101" pos="605,542" message="Wait for all other players to be here\nThen examine the duct" tier="4069,20764,3,1,1" />
+    <WP optional="102" pos="605,542" message="Wait here for player 1 to examine the duct" tier="4069,20764,3,1,1" />
+    <WP optional="103" pos="605,542" message="Wait here for player 1 to examine the duct" tier="4069,20764,3,1,1" />
+
+    <!-- Player 1 takes care of doing this for the group -->
+    <WP optional="100" pos="600,652" message="Try to pick up plywood" tier="4069,20662,3,3,1" />
+    <WP optional="101" pos="600,652" message="Wait for all other players to be here\nThen try to pick up plywood" tier="4069,20662,3,3,1" />
+    <WP optional="102" pos="600,652" message="Wait here for player 1 to try and pick up the plywood" tier="4069,20662,3,3,1" />
+    <WP optional="103" pos="600,652" message="Wait here for player 1 to try and pick up the plywood" tier="4069,20662,3,3,1" />
+
+    <!-- Group works together to kill this guy -->
+    <WP pos="600,652" message="Defeat the Torpid Gurgler" tier="4069,20648,3,4,1" />
+
+    <!-- Everyone in the group grabs what they can in parallel -->
+    <WP pos="600,652" message="Pick up 3 sheets of plywood" tier="4069,20647,3,5,3" />
+    
+    <!-- Player 1 does this for the group -->
+    <WP optional="100" pos="605,546" message="Barricade the opening" tier="4069,20650,4,2,1" />
+    <WP optional="101" pos="605,546" message="Wait for all other players to be there\nThen barricade the opening" tier="4069,20650,4,2,1" />
+    <WP optional="102" pos="605,546" message="Wait here for player 1 to barricade the opening" tier="4069,20650,4,2,1" />
+    <WP optional="103" pos="605,546" message="Wait here for player 1 to barricade the opening" tier="4069,20650,4,2,1" />
+
+    <!-- Group works together to kill -->
+    <WP pos="605,546" message="Defeat the Bouda Matriarch" tier="4069,20651,4,4,1" />
+
+    <!-- Each player has to do -->
+    <WP pos="565,554" message="Start quest [color=#578c82][b][u]Truck Sabotage[/u][/b][/color]" pick="4086" />
+
+    <!-- Player 1 does these two for the group  -->
+    <WP optional="101" pos="555,567" message="Wait a moment for the other 2 players to get [color=#578c82][b][u]Truck Sabotage[/u][/b][/color]\nThen pick an ear of corn" tier="4086,20826,1,1,1" />
+    <WP optional="101" pos="553,549" message="Stuff ear of corn in tailpipe" tier="4086,20827,1,2,1" />
+
+    <!-- Player 2 does this for the group -->
+    <WP optional="102" pos="549,549" message="Wait a moment for the other 2 players to get [color=#578c82][b][u]Truck Sabotage[/u][/b][/color]\nThen take the battery out" tier="4086,20828,1,3,1" />
+
+    <!-- Player 3 does this for the group -->
+    <WP optional="103" pos="538,543" message="Wait a moment for the other 2 players to get [color=#578c82][b][u]Truck Sabotage[/u][/b][/color]\nThen destroy spark plugs" tier="4086,20832,1,6,1" />
+
+    <!-- For solo play, but also assures each multi-player person got credit for the above -->
+    <WP pos="555,567" message="Pick an ear of corn" tier="4086,20826,1,1,1" />
+    <WP pos="553,549" message="Stuff ear of corn in tailpipe" tier="4086,20827,1,2,1" />
+    <WP pos="549,549" message="Take the battery out" tier="4086,20828,1,3,1" />
+    <WP pos="538,543" message="Destroy spark plugs" tier="4086,20832,1,6,1" />
+
+    <!-- Each player has to do (but it'll automatically happen when all players finish) -->
+    <WP message="Complete quest [color=#578c82][b][u]Truck Sabotage[/u][/b][/color].\n" complete="4086" />
+
+    <!-- Whoever gets there first wins, 1 player can do for the group -->
+    <WP pos="527,548" message="Investigate the gate" tier="4069,20770,4,5,1" />
+
+    <!-- Each player has to do -->
+    <WP pos="532,692" message="Examine footprints" tier="4069,20780,5,2,1" />
+
+    <!-- Each player has to do -->
+    <WP pos="575,763" message="Follow footprints and examine letter in the room" tier="4069,20653,5,4,1" />
+
+    <!-- Each player has to do -->
+    <WP pos="604,759" message="Pick up the arm, remove the bracelet and finish quest [color=#578c82][b][u]Things That Go Bump in the Night[/u][/b][/color]" complete="4069" />
+
+    <WP message="Congratulations!\n...You may leave your belongings behind.\n\nThis quest run is now complete." skip="1" />
+</Content>
