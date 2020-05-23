@@ -1,13 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Content>
-    <!--
-        Note: I would have liked to make this so soloing was a matter of selecting all players, but
-        there are bugs in the processor at points like delivering the foundling gear that make it stick
-        on those steps without auto-detecting tier completion. Therefore solo optional is split out.
-        Also the parser doesn't seem to support something like optional="101,102" so these are split out too.
-    -->
-    
     <WP message="New Dawn quest run by [color=#FF00FF][i][b]Sunan[/b][/i][/color]\nChoose solo if doing it by yourself\nOtherwise agree with the group which player you will be\nPlayer 1 is the leader\nClick next to start" skip="1" />
     
     <!-- Each player has to do -->
@@ -132,7 +125,6 @@
     <WP optional="102" pos="468,558" message="Wait in this house (D11) for player 1 to clean it up" tier="4089,20844,1,1,1" />
     <WP optional="103" pos="468,558" message="Wait in this house (D11) for player 1 to clean it up" tier="4089,20844,1,1,1" />
 
-    <!-- TODO: is it possible to just have p2,3 run in and out and then have p1 finish the job? -->
     <!-- Player 1 takes care of doing this for the group 
         In the house tier: 4066,20599,3,2,1
     -->
