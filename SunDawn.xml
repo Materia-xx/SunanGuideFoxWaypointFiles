@@ -13,7 +13,10 @@
     <WP pos="531,547" message="Run over to the trucks and start quest [color=#578c82][b][u]Dawn&apos;s Harvest[/u][/b][/color]" pick="4070" />
     
     <!-- Each player has to do it -->
-    <WP message="Grab the shovel" tier="4070,20659,1,1,1" />
+    <WP optional="100" message="Run over to the truck\nGrab the shovel" tier="4070,20659,1,1,1" />
+    <WP optional="101" message="Run over to the truck\nWait for others in group to be here too\nThen grab the shovel" tier="4070,20659,1,1,1" />
+    <WP optional="102" message="Run over to the truck\nWait for others in group to be here too\nThen grab the shovel" tier="4070,20659,1,1,1" />
+    <WP optional="103" message="Run over to the truck\nWait for others in group to be here too\nThen grab the shovel" tier="4070,20659,1,1,1" />
 
     <!-- Player 1 solos this part for the group -->
     <WP optional="101" pos="539,615" message="Run to this row of corn" />
@@ -35,26 +38,26 @@
 
     <!-- Player 1 does this for the group -->
     <WP optional="100" message="Pick up a full basket of corn" tier="4066,20580,1,5,1" />
-    <WP optional="101" message="Wait until other players are waiting at the fight location\nThen pick up a full basket of corn" tier="4066,20580,1,5,1" />
+    <WP optional="101" message="Make sure other players are close by\nThen pick up a full basket of corn" tier="4066,20580,1,5,1" />
 
     <!-- Each player has to do -->
     <WP pos="513,559" message="Use right hand basket in truck" tier="4070,20797,1,1,1" />
 
     <!-- Player 1 starts the fight for the group -->
     <WP optional="100" pos="515,558" message="Use the left hand box in the back of the truck to start the fight" tier="4066,20582,1,6,1" />
-    <WP optional="101" pos="515,558" message="Use the left hand box in the back of the truck to start the fight" tier="4066,20582,1,6,1" />
+    <WP optional="101" pos="515,558" message="Wait until the other players are at the fight location\nThen use the left hand box in the back of the truck to start the fight" tier="4066,20582,1,6,1" />
     <WP optional="102" pos="527,559" message="Run to this spot and wait for player 1 to start the fight" tier="4066,20582,1,6,1" />
     <WP optional="103" pos="527,559" message="Run to this spot and wait for player 1 to start the fight" tier="4066,20582,1,6,1" />
 
     <!-- Group works together to do this -->
     <WP pos="527,559" message="Win the fight!" tier="4066,20584,1,1,1" />
-    
-    <!-- Each player has to do-->
-    <WP pos="543,548" message="Talk to the Anointed Overseer" complete="4070" tier="4066,20585,1,1,1" />
-    
+
     <!-- Each player has to do -->
     <WP pos="538,546" message="Start quest [color=#578c82][b][u]Grease Monkey[/u][/b][/color]" pick="4081" />
 
+    <!-- Each player has to do-->
+    <WP pos="543,548" message="Talk to the Anointed Overseer" complete="4070" tier="4066,20585,1,1,1" />
+    
     <!-- Each player does a different part to contribute -->
     <WP optional="101" pos="538,542" message="Take out broken sparkplugs" tier="4081,20787,1,1,1" />
     <WP optional="102" pos="549,549" message="Examine missing battery in truck" tier="4081,20786,1,1,1" />
@@ -121,51 +124,55 @@
 
     <!-- Player 1 takes care of doing this for the group -->
     <WP optional="100" pos="468,558" message="Clean up house (D11)" tier="4089,20844,1,1,1" />
-    <WP optional="101" pos="468,558" message="Wait for all other players to be in the house (D11)\nThen clean it up" tier="4089,20844,1,1,1" />
-    <WP optional="102" pos="468,558" message="Wait in this house (D11) for player 1 to clean it up" tier="4089,20844,1,1,1" />
-    <WP optional="103" pos="468,558" message="Wait in this house (D11) for player 1 to clean it up" tier="4089,20844,1,1,1" />
+    <WP optional="101" pos="468,558" message="Wait for all other players to be in the house (D11)\nThen clean up the floor\n\nNote that you can solo kill the bugs/mobs first." tier="4089,20844,1,1,1" />
+    <WP optional="102" pos="468,558" message="Wait in this house (D11) for player 1 to clean it up\n\nClean up walls and grab buckets along the way" tier="4089,20844,1,1,1" />
+    <WP optional="103" pos="468,558" message="Wait in this house (D11) for player 1 to clean it up\n\nClean up walls and grab buckets along the way" tier="4089,20844,1,1,1" />
 
     <!-- Player 1 takes care of doing this for the group 
         In the house tier: 4066,20599,3,2,1
+        
+        With the quest to deliver foundling gear, p2/p3 only need to run in and out of the house
+        and can get credit from p1. But I'm leaving it so everyone must be in the house just in case
+        p2/p3 get too far away before p1 does it.. as I believe there is a distance limit to share credit.
     -->
     <WP optional="100" pos="413,689" message="Deliver the foundling gear (A20)" tier="4066,20600,3,3,1" />
     <WP optional="101" pos="413,689" message="Wait for all other players to be in the house (A20)\nThen deliver the foundling gear" tier="4066,20600,3,3,1" />
-    <WP optional="102" pos="413,689" message="Wait in this house (A20) for player 1 to deliver the foundling gear" tier="4066,20600,3,3,1" />
-    <WP optional="103" pos="413,689" message="Wait in this house (A20) for player 1 to deliver the foundling gear" tier="4066,20600,3,3,1" />
+    <WP optional="102" pos="413,689" message="Wait in this house (A20) for player 1 to deliver the foundling gear\n\nClean up walls and grab buckets along the way" tier="4066,20600,3,3,1" />
+    <WP optional="103" pos="413,689" message="Wait in this house (A20) for player 1 to deliver the foundling gear\n\nClean up walls and grab buckets along the way" tier="4066,20600,3,3,1" />
 
     <!-- Player 1 takes care of doing this for the group -->
     <WP optional="100" pos="464,663" message="Clean up house (A17)" tier="4089,20841,1,1,1" />
-    <WP optional="101" pos="464,663" message="Wait for all other players to be in the house (A17)\nThen clean up house" tier="4089,20841,1,1,1" />
-    <WP optional="102" pos="464,663" message="Wait in this house (A17) for player 1 to clean it up" tier="4089,20841,1,1,1" />
-    <WP optional="103" pos="464,663" message="Wait in this house (A17) for player 1 to clean it up" tier="4089,20841,1,1,1" />
+    <WP optional="101" pos="464,663" message="Wait for all other players to be in the house (A17)\nThen clean up the floor\n\nNote that you can solo kill the bugs/mobs first." tier="4089,20841,1,1,1" />
+    <WP optional="102" pos="464,663" message="Wait in this house (A17) for player 1 to clean it up\n\nClean up walls and grab buckets along the way" tier="4089,20841,1,1,1" />
+    <WP optional="103" pos="464,663" message="Wait in this house (A17) for player 1 to clean it up\n\nClean up walls and grab buckets along the way" tier="4089,20841,1,1,1" />
 
     <!-- Player 1 takes care of doing this for the group
         In the house tier: 4066,20601,3,1,1
     -->
     <WP optional="100" pos="477,710" message="Deliver foundling gear (B8)" tier="4066,20602,3,2,1" />
     <WP optional="101" pos="477,710" message="Wait for all other players to be in the house (B8)\nThen deliver foundling gear" tier="4066,20602,3,2,1" />
-    <WP optional="102" pos="477,710" message="Wait in this house (B8) for player 1 to deliver the foundling gear" tier="4066,20602,3,2,1" />
-    <WP optional="103" pos="477,710" message="Wait in this house (B8) for player 1 to deliver the foundling gear" tier="4066,20602,3,2,1" />
+    <WP optional="102" pos="477,710" message="Wait in this house (B8) for player 1 to deliver the foundling gear\n\nClean up walls and grab buckets along the way" tier="4066,20602,3,2,1" />
+    <WP optional="103" pos="477,710" message="Wait in this house (B8) for player 1 to deliver the foundling gear\n\nClean up walls and grab buckets along the way" tier="4066,20602,3,2,1" />
 
     <!-- Player 1 takes care of doing this for the group 
         In the house tier: 4066,20603,3,1,1
     -->
     <WP optional="100" pos="549,714" message="Deliver foundling gear (D10)" tier="4066,20604,3,2,1" />
     <WP optional="101" pos="549,714" message="Wait for all other players to be in the house (D10)\nThen deliver foundling gear" tier="4066,20604,3,2,1" />
-    <WP optional="102" pos="549,714" message="Wait in this house (D10) for player 1 to deliver the foundling gear" tier="4066,20604,3,2,1" />
-    <WP optional="103" pos="549,714" message="Wait in this house (D10) for player 1 to deliver the foundling gear" tier="4066,20604,3,2,1" />
+    <WP optional="102" pos="549,714" message="Wait in this house (D10) for player 1 to deliver the foundling gear\n\nClean up walls and grab buckets along the way" tier="4066,20604,3,2,1" />
+    <WP optional="103" pos="549,714" message="Wait in this house (D10) for player 1 to deliver the foundling gear\n\nClean up walls and grab buckets along the way" tier="4066,20604,3,2,1" />
 
     <!-- Player 1 takes care of doing this for the group -->
     <WP optional="100" pos="593,688" message="Clean up house (B3)" tier="4089,20842,1,1,1" />
-    <WP optional="101" pos="593,688" message="Wait for all other players to be in the house (B3)\nThen clean up house" tier="4089,20842,1,1,1" />
-    <WP optional="102" pos="593,688" message="Wait in this house (B3) for player 1 to clean it up" tier="4089,20842,1,1,1" />
-    <WP optional="103" pos="593,688" message="Wait in this house (B3) for player 1 to clean it up" tier="4089,20842,1,1,1" />
+    <WP optional="101" pos="593,688" message="Wait for all other players to be in the house (B3)\nThen clean up the floor\n\nNote that you can solo kill the bugs/mobs first." tier="4089,20842,1,1,1" />
+    <WP optional="102" pos="593,688" message="Wait in this house (B3) for player 1 to clean it up\n\nClean up walls and grab buckets along the way" tier="4089,20842,1,1,1" />
+    <WP optional="103" pos="593,688" message="Wait in this house (B3) for player 1 to clean it up\n\nClean up walls and grab buckets along the way" tier="4089,20842,1,1,1" />
 
     <!-- Player 1 takes care of doing this for the group -->
     <WP optional="100" pos="611,757" message="Clean up house (C14)" tier="4089,20843,1,1,1" />
-    <WP optional="101" pos="611,757" message="Wait for all other players to be in the house (C14)\nThen clean up house" tier="4089,20843,1,1,1" />
-    <WP optional="102" pos="611,757" message="Wait in this house (C14) for player 1 to clean it up" tier="4089,20843,1,1,1" />
-    <WP optional="103" pos="611,757" message="Wait in this house (C14) for player 1 to clean it up" tier="4089,20843,1,1,1" />
+    <WP optional="101" pos="611,757" message="Wait for all other players to be in the house (C14)\nThen clean up the floor\n\nNote that you can solo kill the bugs/mobs first." tier="4089,20843,1,1,1" />
+    <WP optional="102" pos="611,757" message="Wait in this house (C14) for player 1 to clean it up\n\nClean up walls and grab buckets along the way" tier="4089,20843,1,1,1" />
+    <WP optional="103" pos="611,757" message="Wait in this house (C14) for player 1 to clean it up\n\nClean up walls and grab buckets along the way" tier="4089,20843,1,1,1" />
 
     <!-- Player 1 takes care of doing this for the group
         In the house tier: 4066,20605,3,1,1
@@ -186,7 +193,7 @@
 
     <!-- Player 1 does this for the group -->
     <WP optional="100" pos="486,767" message="Put items in box" tier="4066,20673,3,3,1" />
-    <WP optional="101" pos="486,767" message="Wait for all other players to be here\nThen put items in box" tier="4066,20673,3,3,1" />
+    <WP optional="101" pos="486,767" message="Run over to the box\nWait for all other players to be near\nThen put items in box" tier="4066,20673,3,3,1" />
     <WP optional="102" pos="486,767" message="Wait here for player 1 to place the items in the box" tier="4066,20673,3,3,1" />
     <WP optional="103" pos="486,767" message="Wait here for player 1 to place the items in the box" tier="4066,20673,3,3,1" />
 
@@ -203,9 +210,9 @@
     <WP pos="262,289" message="Talk to Anointed Overseer and complete [color=#578c82][b][u]The Cult of Personality[/u][/b][/color]" complete="4066" />
 
     <!-- Each player gets a different thing, kind of -->
-    <WP optional="101" pos="464,787" message="Get spark plug" tier="4081,20789,2,1,1" />
-    <WP optional="102" pos="454,780" message="Get battery" tier="4081,20788,2,1,1" />
-    <WP optional="103" pos="454,780" message="Get battery and/or spark plug" tier="4081,20788,2,1,1;4081,20789,2,1,1" />
+    <WP optional="101" pos="464,787" message="Wait for other players to get out of the boxing ring\nThen get spark plug" tier="4081,20789,2,1,1" />
+    <WP optional="102" pos="454,780" message="Wait for other players to get out of the boxing ring\nThen get battery" tier="4081,20788,2,1,1" />
+    <WP optional="103" pos="454,780" message="Wait for other players to get out of the boxing ring\nThen get battery and/or spark plug" tier="4081,20788,2,1,1;4081,20789,2,1,1" />
 
     <!-- For solo play, but also assures each multi-player person got credit for the above -->
     <WP pos="464,787" message="Get spark plug" tier="4081,20789,2,1,1" />
@@ -332,7 +339,10 @@
     <WP pos="424,584" message="Start quest [color=#578c82][b][u]Death From Above[/u][/b][/color]." pick="4083" />
 
     <!-- Each player has to do -->
-    <WP pos="440,606" message="Get the fireworks" tier="4083,20803,1,1,1" />
+    <WP optional="100" pos="440,606" message="Get the fireworks" tier="4083,20803,1,1,1" />
+    <WP optional="101" pos="440,606" message="Get the fireworks\n\nNote the fireworks box takes some time to respawn after each player grabs it" tier="4083,20803,1,1,1" />
+    <WP optional="102" pos="440,606" message="Get the fireworks\n\nNote the fireworks box takes some time to respawn after each player grabs it" tier="4083,20803,1,1,1" />
+    <WP optional="103" pos="440,606" message="Get the fireworks\n\nNote the fireworks box takes some time to respawn after each player grabs it" tier="4083,20803,1,1,1" />
 
     <!-- Each player has to do -->
     <WP optional="100" pos="422,579" message="Place fireworks on the ground and activate them." tier="4083,20807,2,1,1;4083,20808,2,2,1" />
@@ -356,10 +366,13 @@
     <WP pos="602,777" message="Start quest [color=#578c82][b][u]Graffiti Time[/u][/b][/color]." pick="4088" />
     
     <!-- Each player has to do -->
-    <WP pos="602,777" message="Collect cleaning supplies." tier="4088,20845,1,1,1" />
+    <WP pos="602,777" message="Collect spray paint cans." tier="4088,20845,1,1,1" />
 
     <!-- Group splits up and works in parallel to complete this -->
-    <WP message="Finish spray painting the domiciles" tier="4088,20837,1,2,8" />
+    <WP optional="100" message="Finish spray painting the domiciles" tier="4088,20837,1,2,8" />
+    <WP optional="101" message="Wait until others have also collected the spray paint cans\nThen finish spray painting the domiciles" tier="4088,20837,1,2,8" />
+    <WP optional="102" message="Wait until others have also collected the spray paint cans\nThen finish spray painting the domiciles" tier="4088,20837,1,2,8" />
+    <WP optional="103" message="Wait until others have also collected the spray paint cans\nThen finish spray painting the domiciles" tier="4088,20837,1,2,8" />
 
     <!-- 
         These next three are can be done by any one player in the group and everyone gets credit
@@ -400,7 +413,7 @@
     
     <!-- Player 1 does this for the group -->
     <WP optional="100" pos="605,546" message="Barricade the opening" tier="4069,20650,4,2,1" />
-    <WP optional="101" pos="605,546" message="Wait for all other players to be there\nThen barricade the opening" tier="4069,20650,4,2,1" />
+    <WP optional="101" pos="605,546" message="Run to opening\nWait for all other players to be near\nThen barricade the opening" tier="4069,20650,4,2,1" />
     <WP optional="102" pos="605,546" message="Wait here for player 1 to barricade the opening" tier="4069,20650,4,2,1" />
     <WP optional="103" pos="605,546" message="Wait here for player 1 to barricade the opening" tier="4069,20650,4,2,1" />
 
