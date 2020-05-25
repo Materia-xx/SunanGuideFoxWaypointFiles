@@ -93,7 +93,7 @@
     <WP pos="453,606" message="Listen to the sermon" tier="4066,20872,2,2,1" />
 
     <!-- Each player has to do -->
-    <WP pos="461,595" message="Inspect the a fresco" tier="4066,20589,2,3,1" />
+    <WP pos="461,595" message="Inspect a fresco" tier="4066,20589,2,3,1" />
 
     <!-- Each player has to do -->
     <WP pos="456,598" message="/covereyes, /clap and /pray in front of the frescos" tier="4066,20590,2,4,3" />
@@ -191,6 +191,14 @@
     <WP optional="102" pos="548,767" message="Wait until all players are in the room\nThen grab items from the room" tier="4066,20606,3,2,3" />
     <WP optional="103" pos="548,767" message="Wait until all players are in the room\nThen grab items from the room" tier="4066,20606,3,2,3" />
 
+    <!-- Each player has to do 
+        This is a bit out of the way. It's like this because I've found many times
+        where all I needed to complete the first section of the Daily Challenges
+        was 2 side missions. 
+    -->
+    <WP pos="467,605" message="Talk to the Anointed Overseer to finish quest [color=#578c82][b][u]Whitewashing[/u][/b][/color]." complete="4082" />
+    <WP pos="467,605" message="Talk to the Anointed Overseer to finish quest [color=#578c82][b][u]Vermin Cleanup Detail[/u][/b][/color]." complete="4089" />
+
     <!-- Player 1 does this for the group -->
     <WP optional="100" pos="486,767" message="Put items in box" tier="4066,20673,3,3,1" />
     <WP optional="101" pos="486,767" message="Run over to the box\nWait for all other players to be near\nThen put items in box" tier="4066,20673,3,3,1" />
@@ -217,10 +225,6 @@
     <!-- For solo play, but also assures each multi-player person got credit for the above -->
     <WP pos="464,787" message="Get spark plug" tier="4081,20789,2,1,1" />
     <WP pos="454,780" message="Get battery" tier="4081,20788,2,1,1" />
-
-    <!-- Each player has to do -->
-    <WP pos="467,605" message="Talk to the Anointed Overseer to finish quest [color=#578c82][b][u]Whitewashing[/u][/b][/color]." complete="4082" />
-    <WP pos="467,605" message="Talk to the Anointed Overseer to finish quest [color=#578c82][b][u]Vermin Cleanup Detail[/u][/b][/color]." complete="4089" />
 
     <!-- Each player fixes a different truck -->
     <WP optional="101" pos="549,549" message="Wait for all players to be close by\nThen put battery in truck" tier="4081,20790,2,2,1" />
@@ -279,7 +283,7 @@
         Turn on tracker and find: 4085,20823,2,5,1
     -->
     <WP pos="478,469" message="Turn on tracker\nFind listening device between buildings" tier="4085,20823,2,5,1" />
-    <WP pos="478,469" message="Turn on tracker\nFind listening device between buildings" tier="4085,20824,3,1,1ee" />
+    <WP pos="478,469" message="Turn on tracker\nFind listening device between buildings" tier="4085,20824,3,1,1" />
 
     <!-- Each player has to do -->
     <WP pos="460,469" message="Finish quest [color=#578c82][b][u]Espionage[/u][/b][/color]." complete="4085" />

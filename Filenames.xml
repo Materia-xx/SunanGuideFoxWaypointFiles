@@ -4,6 +4,8 @@
     <Guide name="Sun Three" location="SunThree.xml" author="Sunan" optional="" />
     <Guide name="Sun New Dawn" location="SunDawn.xml" author="Sunan" optional="100,Solo;101,Player 1;102,Player 2;103,Player 3" />
     <Guide name="Sun New Dawn Extras" location="SunDawnExtras.xml" author="Sunan" optional="" />
+    <Guide name="Sun Scorched Desert" location="SunScorchedDesert.xml" author="Sunan" optional="100,Solo;101,Player 1;102,Player 2;103,Player 3" />
+    <!--<Guide name="Sun Carpanthian Fangs" location="SunFang.xml" author="Sunan" optional="100,Solo;101,Player 1;102,Player 2;103,Player 3" />-->
     <Guide name="Kaidan" location="Kaidan.xml" author="Thundyr" optional="3610,Fuun;3669,Tenebrous Sky;123,Kill Quests;999,Directions" />
     <Guide name="Neelie Shadowy Forest" location="NeelieSF1.0.xml" author="Neelie" optional=""/>
     <Guide name="Scorched Desert" location="SD.xml" author="Dots" optional="3061;Friends and Neighbours" />
