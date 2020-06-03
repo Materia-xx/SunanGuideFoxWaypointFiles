@@ -322,7 +322,8 @@
     <WP pos="532,747" message="Start quest [color=#578c82][b][u]Things That Go Bump in the Night[/u][/b][/color]." pick="4069" />
 
     <!-- Each player has to do -->
-    <WP pos="425,744" message="Sleep until night\nThen kill a Kishi Demon and get quest [color=#578c82][b][u]A Monstrous Siege[/u][/b][/color]." pick="4084" />
+    <WP pos="532,746" message="Sleep until night" tier="4069,20847,1,1,1" />
+    <WP pos="425,744" message="Kill the Kishi Demon at this spot and get quest [color=#578c82][b][u]A Monstrous Siege[/u][/b][/color]." pick="4084" />
 
     <!-- Player 1 starts the quest, then group works together to finish it -->
     <WP optional="100" pos="425,744" message="Try to open the door\nThen finish quest [color=#578c82][b][u]A Monstrous Siege[/u][/b][/color]." complete="4084" />
